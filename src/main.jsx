@@ -9,6 +9,9 @@ import Home from "./Components/Home/Home.jsx";
 import LogIn from "./Components/Login/LogIn.jsx";
 import SignUp from "./Components/SignUp/SignUp.jsx";
 import Error from "./Components/Error/Error.jsx";
+import GardenTips from "./Components/GardenTips/GardenTips.jsx";
+import BrowseTips from "./Components/BrowesTips/BrowseTips.jsx";
+import TipDetails from "./Components/TipDetails/TipDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +30,22 @@ const router = createBrowserRouter([
       {
         path: "register",
         Component: SignUp,
+      },
+      {
+        path: "gardenTips",
+        Component: GardenTips,
+      },
+      {
+        path: "browserTips",
+        Component: BrowseTips,
+      },
+      {
+        path: "tipDetails/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:4000/tips/${params.id}`).then((res) =>
+            res.json()
+          ),
+        Component: TipDetails,
       },
     ],
   },

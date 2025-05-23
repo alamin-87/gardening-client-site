@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../Context/AuthContext";
+import '../Navbar/Navbar.css'
 
 const Navbar = () => {
   const { user, signOutUser } = useContext(AuthContext);
@@ -20,13 +21,19 @@ const Navbar = () => {
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
+      <li>
+        <NavLink to="/exploreGardening">Explore Gardeners</NavLink>
+      </li>
+      <li>
+        <NavLink to="/browserTips">Browse Tips </NavLink>
+      </li>
       {user && (
         <>
           <li>
-            <NavLink to="/details">Subscription Details</NavLink>
+            <NavLink to="/gardenTips"> Garden Tip</NavLink>
           </li>
           <li>
-            <NavLink to="/profile">Profile</NavLink>
+            <NavLink to="/myTips">My Tips</NavLink>
           </li>
         </>
       )}
@@ -63,7 +70,7 @@ const Navbar = () => {
         </div>
         <NavLink to="/" className="btn btn-ghost text-xl">
           <h2 className="text-2xl font-bold flex items-center gap-1">
-            <span className="text-black">FITNESS</span>
+            <span className="text-black">Gardening</span>
             <span className="text-orange-500">AREA</span>
           </h2>
         </NavLink>

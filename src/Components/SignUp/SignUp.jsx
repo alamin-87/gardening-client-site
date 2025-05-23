@@ -98,8 +98,9 @@ const SignUp = () => {
         <div className="text-center  lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl font-bold">Register now!</h1>
           <p className="pt-6 text-base lg:text-lg max-w-md mx-auto">
-            Join FITNESSAREA and start your fitness journey with expert
-            guidance, personalized plans, and real results. Sign up now!
+            Join GardeningZone today! Start your journey toward a greener thumb
+            with expert tips, personalized tools, and a thriving gardener
+            community.
           </p>
         </div>
 
@@ -112,6 +113,13 @@ const SignUp = () => {
                 type="text"
                 className="input input-bordered w-full"
                 placeholder="Name"
+              />
+              <label className="label">Photo</label>
+              <input
+                name="photo"
+                type="text"
+                className="input input-bordered w-full"
+                placeholder="Photo URL"
               />
               <label className="label mt-2">Email</label>
               <input

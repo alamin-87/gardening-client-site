@@ -135,8 +135,8 @@ const LogIn = () => {
           <div className="text-center lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl font-bold">Login now!</h1>
             <p className="pt-6 text-base lg:text-lg max-w-md mx-auto">
-              Welcome back to FITNESSAREA! Log in to continue your fitness
-              journey and track your progress.
+              Welcome back to GardeningZone! Log in to continue growing your
+              knowledge, managing your garden, and nurturing your green space.
             </p>
           </div>
 
